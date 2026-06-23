@@ -1,0 +1,7 @@
+#ifndef CONSTANTES_H
+#define CONSTANTES_H
+
+#define CANTIDAD_PUNTOS 6
+#define LONGITUD_NOMBRE_PAIS 100
+
+#endif
