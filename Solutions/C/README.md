@@ -49,7 +49,7 @@ Proyecto1-LDP/
 
 El programa incluye un diagrama Nassi-Schneiderman para visualizar el flujo de control:
 
-![Diagrama Nassi - Gini](../../Docs/Images/Diagrama_Nassi_Gini.png)
+![Diagrama Nassi - Gini](../../Docs/Images/Diagrama_Nassi_Gini_C.png)
 
 ## Compilación
 
