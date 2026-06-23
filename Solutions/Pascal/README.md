@@ -59,10 +59,21 @@ Solutions/Pascal/
 
 El programa incluye diagramas Nassi-Schneiderman para visualizar el flujo de control:
 
-- `Gini_nassi-principal-pascal.png`: diagrama del procedimiento principal.
-- `Gini_nassi-datos-pascal.png`: diagrama de lectura de datos.
-- `Gini_nassi-calculo-pascal.png`: diagrama del cálculo del coeficiente de Gini.
-- `Gini_nassi-clasificacion-pascal.png`: diagrama de clasificación del país.
+### Diagrama Principal
+
+![Diagrama Nassi - Principal](../../Docs/Images/Gini_nassi-principal-pascal.png)
+
+### Diagrama de Lectura de Datos
+
+![Diagrama Nassi - Datos](../../Docs/Images/Gini_nassi-datos-pascal.png)
+
+### Diagrama de Cálculo del Coeficiente de Gini
+
+![Diagrama Nassi - Cálculo](../../Docs/Images/Gini_nassi-calculo-pascal.png)
+
+### Diagrama de Clasificación
+
+![Diagrama Nassi - Clasificación](../../Docs/Images/Gini_nassi-clasificacion-pascal.png)
 
 ## Compilación
 

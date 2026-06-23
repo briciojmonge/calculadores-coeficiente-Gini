@@ -45,6 +45,12 @@ Proyecto1-LDP/
 - `clasificacion.c` / `clasificacion.h`: contiene la clasificación del país según el valor del índice de Gini.
 - `constantes.h`: contiene constantes generales del programa.
 
+## Diagramas de flujo
+
+El programa incluye un diagrama Nassi-Schneiderman para visualizar el flujo de control:
+
+![Diagrama Nassi - Gini](../../Docs/Images/Diagrama_Nassi_Gini.png)
+
 ## Compilación
 
 Para compilar el programa, ejecutar:
