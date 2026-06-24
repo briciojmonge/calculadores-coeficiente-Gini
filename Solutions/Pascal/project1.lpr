@@ -27,8 +27,12 @@ var
   Gini: Real;
   // Indica la cantidad de puntos usados en el calculo numerico.
   Puntos: integer;
+
+  Clasificacion: string;
+=======
   // Guarda la clasificacion textual asociada al indice de Gini.
   Calssification: string;
+  
 begin
   // Mensajes iniciales para explicar al usuario el flujo esperado.
   WriteLn('==================================================');
@@ -38,7 +42,7 @@ begin
   WriteLn('Instrucciones:');
   WriteLn('- Ingrese el nombre del pais (o "salir" para terminar).');
   WriteLn('- Luego ingrese los porcentajes acumulados del ingreso');
-  WriteLn('  para los quintiles: 20%%, 40%%, 60%%, 80%% y 100%%.');
+  WriteLn('  para los quintiles: 20%, 40%, 60%, 80% y 100%.');
   WriteLn('  Ejemplo para EE.UU. (2025): 3.1, 11.3, 25.2, 47.8, 100');
   WriteLn('--------------------------------------------------');
 
@@ -72,11 +76,11 @@ begin
           LeerDatosIngresos(ing_acum);
           // Con la curva cargada, se calcula el area y luego el Gini.
           Gini := CalcularGini(Pob_acum, ing_acum, Puntos);
-          Calssification := ClassificarGini(Gini);
+          Clasificacion := ClasificarGini(Gini);
 
           writeln('Resultado para ', CountryName);
           Writeln('Coeficiente de Gini: ', Gini:0:4);
-          Writeln('Clasificacion: ', Calssification);
+          Writeln('Clasificacion: ', Clasificacion);
         end;
     end;
 end;

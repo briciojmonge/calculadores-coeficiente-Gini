@@ -40,11 +40,12 @@ Proyecto1-LDP/
 
 ## Descripción de archivos
 
-- `main.c`: controla el flujo principal del programa.
-- `entrada.c` / `entrada.h`: contiene las funciones relacionadas con la lectura de datos.
-- `gini.c` / `gini.h`: contiene las funciones de validación y cálculo del índice de Gini.
-- `clasificacion.c` / `clasificacion.h`: contiene la clasificación del país según el valor del índice de Gini.
-- `constantes.h`: contiene constantes generales del programa.
+* `main.c`: controla el flujo principal del programa.
+* `entrada.c` / `entrada.h`: contiene las funciones encargadas de solicitar datos al usuario, como el nombre del país, los porcentajes acumulados del ingreso y la respuesta para continuar o finalizar.
+* `validacion_entrada.c` / `validacion_entrada.h`: contiene funciones auxiliares para limpiar líneas de entrada, validar texto y leer números de forma segura, evitando ciclos por entradas no numéricas.
+* `gini.c` / `gini.h`: contiene las funciones de validación matemática de los datos acumulados, el cálculo del área bajo la curva de Lorenz y el cálculo del índice de Gini.
+* `clasificacion.c` / `clasificacion.h`: contiene la clasificación del país según el valor del índice de Gini.
+* `constantes.h`: contiene constantes generales del programa, como la cantidad de puntos de la curva y la longitud máxima del nombre del país.
 
 ## Diagramas de flujo
 
@@ -54,19 +55,65 @@ El programa incluye un diagrama Nassi-Schneiderman para visualizar el flujo de c
 
 ## Compilación
 
-Para compilar el programa, ejecutar:
+Para compilar el programa, ubicarse en la carpeta `Solutions/C` y ejecutar:
 
 ```bash
+gcc main.c entrada.c validacion_entrada.c gini.c clasificacion.c -o gini
+```
+
+En Windows, puede generarse el ejecutable con extensión `.exe`:
+
+```powershell
 gcc main.c entrada.c validacion_entrada.c gini.c clasificacion.c -o gini.exe
+```
+
+También se recomienda compilar con advertencias activadas:
+
+```bash
+gcc -Wall -Wextra main.c entrada.c validacion_entrada.c gini.c clasificacion.c -o gini
+```
+
+En Windows:
+
+```powershell
+gcc -Wall -Wextra main.c entrada.c validacion_entrada.c gini.c clasificacion.c -o gini.exe
 ```
 
 ## Ejecución
 
-Para ejecutar el programa en Windows PowerShell:
+En Windows PowerShell:
 
 ```powershell
 .\gini.exe
 ```
+
+En Linux, macOS o terminales tipo Unix:
+
+```bash
+./gini
+```
+
+Si se utiliza un IDE o editor diferente, se deben agregar al proyecto todos los archivos fuente:
+
+```txt
+main.c
+entrada.c
+validacion_entrada.c
+gini.c
+clasificacion.c
+```
+
+Además, deben estar disponibles los archivos de encabezado:
+
+```txt
+constantes.h
+entrada.h
+validacion_entrada.h
+gini.h
+clasificacion.h
+```
+
+Es importante que el entorno de desarrollo compile todos los archivos `.c` juntos, no solamente `main.c`, porque el programa está dividido en módulos.
 
 ## Datos solicitados al usuario
 
@@ -165,6 +212,7 @@ El programa se dividió en módulos para mantener alta cohesión y bajo enlazami
 Cada archivo tiene una responsabilidad clara:
 
 - La entrada de datos se maneja en el módulo `entrada`.
+- La validación de formato de entrada se maneja en el módulo `validacion_entrada`.
 - Los cálculos matemáticos se manejan en el módulo `gini`.
 - La clasificación del resultado se maneja en el módulo `clasificacion`.
 - Las constantes generales se centralizan en `constantes.h`.
