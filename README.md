@@ -1,6 +1,10 @@
 # Calculadores del Coeficiente de Gini
 
 Este repositorio contiene dos implementaciones del cálculo del coeficiente de Gini a partir de datos de distribución acumulada del ingreso por quintiles.
+=======
+Curso: IC-8052 Lenguajes de Programación  
+Tema: Programación Procedimental 
+Estudiantes: Santiago Calderon y Fabricio Monge 
 
 Las soluciones fueron desarrolladas como parte del Proyecto 1 del curso de Lenguajes de Programación, con el objetivo de aplicar el paradigma de programación procedimental mediante lenguajes imperativos.
 

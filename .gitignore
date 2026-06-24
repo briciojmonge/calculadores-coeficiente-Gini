@@ -1,0 +1,7 @@
+*.exe
+*.o
+*.ppu
+*.res
+
+Solutions/Pascal/lib/
+Solutions/Pascal/backup/
