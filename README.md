@@ -1,7 +1,8 @@
 # Calculadores del Coeficiente de Gini
 
 Curso: IC-8052 Lenguajes de Programación  
-Tema: Programación Procedimental  
+Tema: Programación Procedimental 
+Estudiantes: Santiago Calderon y Fabricio Monge 
 
 ## Descripción general
 

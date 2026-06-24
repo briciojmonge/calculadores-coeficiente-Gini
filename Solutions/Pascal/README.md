@@ -2,6 +2,7 @@
 
 Curso: IC-8052 Lenguajes de Programación  
 Tema: Programación Procedimental  
+Estudiantes: Santiago Calderon y Fabricio Monge
 
 ## Descripción
 
