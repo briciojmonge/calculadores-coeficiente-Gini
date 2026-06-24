@@ -4,24 +4,24 @@ unit clasificacion_gini;
 
 interface
 
-function ClassificarGini(G: Real): String;
+function ClasificarGini(G: Real): String;
 
 implementation
 
-function ClassificarGini(G: Real): String;
+function ClasificarGini(G: Real): String;
 begin
   if G < 0.3 then
-    ClassificarGini := 'Muy buena distribucion del ingreso'
+    ClasificarGini := 'Muy buena distribucion del ingreso'
   else if G < 0.35 then
-    ClassificarGini := 'Buena distribucion del ingreso'
+    ClasificarGini := 'Buena distribucion del ingreso'
   else if G < 0.4 then
-    ClassificarGini := 'Distribucion regular del ingreso'
+    ClasificarGini := 'Distribucion regular del ingreso'
   else if G < 0.45 then
-    ClassificarGini := 'Distribucion desigual del ingreso'
-  else if G < 0.5 then
-    ClassificarGini := 'Mala distribucion del ingreso'
+    ClasificarGini := 'Distribucion desigual del ingreso'
+  else if G <= 0.5 then
+    ClasificarGini := 'Mala distribucion del ingreso'
   else
-    ClassificarGini := 'Enorme desigualdad del ingreso';
+    ClasificarGini := 'Enorme desigualdad del ingreso';
 end;
 
 end.

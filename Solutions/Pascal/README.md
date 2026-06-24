@@ -24,44 +24,30 @@ El proyecto fue desarrollado en lenguaje Pascal, siguiendo un enfoque de program
 ```txt
 Solutions/Pascal/
 ├── project1.lpr
+├── project1.lpi
 ├── pais_gini.pas
 ├── entrada_gini.pas
 ├── calculo_gini.pas
 ├── clasificacion_gini.pas
-├── project1.lpi
-├── project1.lps
-├── prueba.pas
-├── backup/
-│   ├── project1.lpi
-│   ├── project1.lpr
-│   └── project1.lps
-├── lib/
-│   └── i386-win32/
-│       └── project1.compiled
-├── README.md
-├── Gini_nassi-principal-pascal.png
-├── Gini_nassi-datos-pascal.png
-├── Gini_nassi-calculo-pascal.png
-└── Gini_nassi-clasificacion-pascal.png
+└── README.md
 ```
 
 ## Descripción de archivos
 
-- `project1.lpr`: archivo principal del programa, encargado del flujo general.
-- `pais_gini.pas`: unidad para leer y validar el nombre del país.
-- `entrada_gini.pas`: unidad para leer y validar los porcentajes acumulados del ingreso.
-- `calculo_gini.pas`: unidad para el cálculo del coeficiente de Gini.
-- `clasificacion_gini.pas`: unidad para clasificar el valor de Gini.
+- `project1.lpr`: archivo principal del programa, encargado de coordinar el flujo general.
 - `project1.lpi`: archivo de configuración del proyecto Lazarus.
-- `project1.lps`: archivo de sesión del proyecto Lazarus.
-- `prueba.pas`: archivo de pruebas (opcional).
+- `pais_gini.pas`: unidad encargada de leer y validar el nombre del país.
+- `entrada_gini.pas`: unidad encargada de leer y validar los porcentajes acumulados del ingreso.
+- `calculo_gini.pas`: unidad encargada de calcular el coeficiente de Gini mediante la regla del trapecio.
+- `clasificacion_gini.pas`: unidad encargada de clasificar el país según el valor del índice de Gini.
+- `README.md`: documento con instrucciones de compilación, ejecución y uso del programa.
 
 ## Procedimientos y Funciones principales
 
 - `LeerNombrePais()`: lee y valida el nombre del país.
 - `LeerDatosIngresos()`: lee y valida los porcentajes acumulados del ingreso.
 - `CalcularGini()`: calcula el índice de Gini utilizando la regla del trapecio.
-- `ClassificarGini()`: clasifica el país según el valor del índice de Gini obtenido.
+- `ClasificarGini()`: clasifica el país según el valor del índice de Gini obtenido.
 - `Main()`: controla el flujo principal del programa desde `project1.lpr`.
 
 ## Diagramas de flujo
@@ -158,7 +144,7 @@ Resultado esperado:
 
 ```txt
 Coeficiente de Gini: 0.4504
-Clasificación: Distribución desigual del ingreso
+Clasificación: Mala distribución del ingreso
 ```
 
 ## Clasificación del Índice de Gini
@@ -169,5 +155,5 @@ El programa clasifica los países según el índice de Gini calculado:
 - **0.30 ≤ Gini < 0.35**: Buena distribución del ingreso
 - **0.35 ≤ Gini < 0.40**: Distribución regular del ingreso
 - **0.40 ≤ Gini < 0.45**: Distribución desigual del ingreso
-- **0.45 ≤ Gini < 0.50**: Mala distribución del ingreso
-- **Gini ≥ 0.50**: Enorme desigualdad del ingreso
+- **0.45 ≤ Gini ≤ 0.50**: Mala distribución del ingreso
+- **Gini > 0.50**: Enorme desigualdad del ingreso

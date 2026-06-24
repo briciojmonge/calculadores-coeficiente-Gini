@@ -20,7 +20,7 @@ var
   n: integer;
   Gini: Real;
   Puntos: integer;
-  Calssification: string;
+  Clasificacion: string;
 begin
   WriteLn('==================================================');
   WriteLn('   CALCULO DEL COEFICIENTE DE GINI');
@@ -57,11 +57,11 @@ begin
         begin
           LeerDatosIngresos(ing_acum);
           Gini := CalcularGini(Pob_acum, ing_acum, Puntos);
-          Calssification := ClassificarGini(Gini);
+          Clasificacion := ClasificarGini(Gini);
 
           writeln('Resultado para ', CountryName);
           Writeln('Coeficiente de Gini: ', Gini:0:4);
-          Writeln('Clasificacion: ', Calssification);
+          Writeln('Clasificacion: ', Clasificacion);
         end;
     end;
 end;
