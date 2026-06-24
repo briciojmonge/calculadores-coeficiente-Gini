@@ -29,7 +29,7 @@ begin
   WriteLn('Instrucciones:');
   WriteLn('- Ingrese el nombre del pais (o "salir" para terminar).');
   WriteLn('- Luego ingrese los porcentajes acumulados del ingreso');
-  WriteLn('  para los quintiles: 20%%, 40%%, 60%%, 80%% y 100%%.');
+  WriteLn('  para los quintiles: 20%, 40%, 60%, 80% y 100%.');
   WriteLn('  Ejemplo para EE.UU. (2025): 3.1, 11.3, 25.2, 47.8, 100');
   WriteLn('--------------------------------------------------');
 
