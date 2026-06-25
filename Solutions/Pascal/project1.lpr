@@ -27,12 +27,7 @@ var
   Gini: Real;
   // Indica la cantidad de puntos usados en el calculo numerico.
   Puntos: integer;
-
   Clasificacion: string;
-=======
-  // Guarda la clasificacion textual asociada al indice de Gini.
-  Calssification: string;
-  
 begin
   // Mensajes iniciales para explicar al usuario el flujo esperado.
   WriteLn('==================================================');
